@@ -1,0 +1,18 @@
+<header>
+  <p><a href="/">{{ site.title }}</a></p>
+  <p>{{ site.blurb }}</p>
+
+  <ul>
+    <li><a href="http://twitter.com/sumeetjain">Twitter</a></li>
+    <li><a href="http://github.com/sumeetjain">GitHub</a></li>
+    <li><a href="{{ "/feed.xml" }}">RSS</a></li>
+  </ul>
+
+  <ul>
+    {% for the_page in site.pages %}
+      {% if the_page.title %}
+      <li><a href="{{ the_page.url }}">{{ the_page.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</header>
