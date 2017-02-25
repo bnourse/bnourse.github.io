@@ -2,16 +2,21 @@
 layout: default
 ---
 
-<h1>Recent Articles</h1>
+<div class="content summaries">
 
-{% for post in site.posts %}
-  <div>
-    <small>{{ post.date | date: "%b %-d, %Y" }}</small>
-    <br>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    
-    {{ post.excerpt }}
+	<h1 class="content-title">Recent Articles</h1>
 
-    <hr>
-  </div>
-{% endfor %}
+	{% for post in site.posts %}
+	  <div class="article-summary">
+	  	<hr>
+	    <p class="dateline">{{ post.date | date: "%b %-d, %Y" }}</p>
+	    <h1 class="article-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+	    
+	    <div class="summary-content">
+	    	{{ post.excerpt }}
+	    </div>
+
+	  </div>
+	{% endfor %}
+
+</div>

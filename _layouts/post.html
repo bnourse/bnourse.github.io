@@ -2,12 +2,17 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
 
-<span>{{ page.date | date: "%b %-d, %Y" }}</span>
+<div class="content single">
+	<h1 class="article-title">{{ page.title }}</h1>
 
-{{ content }}
+	<p class="dateline">{{ page.date | date: "%b %-d, %Y" }}</p>
 
-<a href="http://twitter.com/share?url={{ page.url | absolute_url }}">
-  Share this on Twitter!
-</a>
+	{{ content }}
+
+</div>
+
+<div class="twitter-share">
+	<i class="fa fa-twitter"></i>
+	<p>If you liked this article and think others should read it, please <a href="http://twitter.com/share?url={{ page.url | absolute_url }}">share it on Twitter.</a></p>
+</div>

@@ -1,18 +1,46 @@
 <header>
-  <p><a href="/">{{ site.title }}</a></p>
-  <p>{{ site.blurb }}</p>
 
-  <ul>
-    <li><a href="http://twitter.com/sumeetjain">Twitter</a></li>
-    <li><a href="http://github.com/sumeetjain">GitHub</a></li>
-    <li><a href="{{ "/feed.xml" }}">RSS</a></li>
-  </ul>
+  <div class="title-area">
+    <a href="/">
+      <h1 class="header-title">{{ site.title }}</h1>
+      <p class="tagline">{{ site.blurb }}</p>
+    </a>
 
-  <ul>
-    {% for the_page in site.pages %}
-      {% if the_page.title %}
-      <li><a href="{{ the_page.url }}">{{ the_page.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+    <div class="nav-toggle">
+      <i class="fa fa-bars"></i>
+    </div>
+  </div>
+
+  <div class="nav-area">
+    <div class="share-icons">
+      <span class="fa-stack" id="twitter">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="fa-stack" id="github">
+        <i class="fa fa-github fa-stack-2x"></i>
+      </span>
+      <span class="fa-stack" id="rss">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+      </span>
+    </div>
+
+    <div class="navigation">
+      <ul class = "nav-list">
+        {% for the_page in site.pages %}
+          {% if the_page.title %}
+            {% assign current = nil %}
+            {% if page.title %}
+              {% if page.title == the_page.title %}
+                {% assign current = 'current' %}
+              {% endif %}
+            {% endif %}
+            <li><a class = "{{current}}" href="{{ the_page.url }}">{{ the_page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
 </header>

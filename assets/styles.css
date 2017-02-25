@@ -1,3 +1,363 @@
-body{
-  background-color: grey;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+	font-weight: 300;
 }
+
+hr {
+	border: none;
+	border-bottom: 1px solid #f2f0ed;
+}
+
+.title-area {
+	background-color: #404040;
+	color: #E6E6E6;
+	margin: 0;
+    letter-spacing: .05em;
+	padding: 21px 20px 25px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+a {
+	color: inherit;
+}
+
+a.current {
+	color: #4DB380;
+}
+
+h1, h2, h3 {
+	font-weight: 400;
+	margin: 0 0 0 0;
+}
+
+code {
+	font-family: 'Roboto Mono', monospace;
+	background-color: #F4F2F1;
+	font-size: .9em;
+	font-weight: 400;
+}
+
+figure {
+	text-align: right;
+	margin: 0;
+}
+
+figure img {
+	width: 100%;
+	padding: 2px;
+	border: 1px solid #f2f0ed;
+	border-radius: 2px;
+}
+
+figcaption {
+	font-style: italic;
+	font-size: .75em;
+}
+
+.content {
+	padding: 0 20px 0 20px;
+}
+
+.nav-list a, 
+.summaries h1 a,
+.title-area a {
+	text-decoration: none;
+}
+
+.header-title {
+	text-transform: uppercase;
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: 400;
+}
+
+.nav-toggle {
+	font-size: 24px;
+	padding: 1px 10px; 
+	margin: 0;
+	border: 2px solid transparent;
+}
+
+.nav-toggle:active {
+	border: 2px solid blue;
+	border-radius: 5px;
+}
+
+.tagline {
+	margin: 0;
+	color: #A4A4A4;
+	font-size: .75em;
+}
+
+.nav-area {
+	/*display: flex;*/
+	display: none;
+	align-items: center;
+	background-color: #F4F2F0;
+	padding: 22px;
+	margin: 0;
+	border-bottom: 1px;
+	justify-content: space-between;
+	box-shadow: 0 2px 5px lightgrey;
+	position: absolute;
+	top: 88px;
+	left: 0px;
+	width: calc(100% - 44px);
+	z-index: 10;
+}
+
+.summaries .content-title,
+.article-index .content-title, 
+.about .content-title {
+	text-transform: uppercase;
+	font-size: .75em;
+	letter-spacing: .2em;
+	word-spacing: .4em;
+	color: #AAAAAA;
+	font-weight: 400;
+	margin: 2.25em 0;
+} 
+
+.nav-list {
+	color: #666666;
+	list-style-type: none;
+	text-transform: uppercase;
+	margin: 0;
+	letter-spacing: .05em;
+	font-size: .85em;
+    font-weight: 400;
+}
+
+.nav-list li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.nav-list a:hover,
+.summaries a:hover {
+	color: #4DB380;
+}
+
+.share-icons {
+	color: #CCCCCC;
+}
+
+.share-icons span {
+	margin-right: 7px;
+}
+
+.fa-stack {
+	font-size: .875em;
+}
+
+.fa-stack .fa-twitter {
+	color: #F4F2F0;
+}
+
+.fa-stack#twitter:hover .fa-circle {
+	color: #55ACEE
+}
+
+.fa-stack .fa-rss {
+	color: #F4F2F0;
+}
+
+.fa-stack#rss:hover .fa-circle {
+	color: #FF9933;
+}
+
+.fa-stack#github:hover .fa-github {
+	color: #171715;
+}
+
+.single .dateline {
+	font-size: .875em;
+	color: #A4A4A4;
+	padding-bottom: 1.75em;
+	border-bottom: solid 1px #f2f0ed;
+}
+
+.single .article-title {
+	font-size: 1.75em;
+    line-height: 1.1em;
+    margin: 1em 0 .5em 0;
+    font-weight: 600;
+}
+
+.single p {
+    margin: 1.4em 0 1.4em 0;
+    line-height: 1.5em;
+}
+
+.summaries .article-title {
+	font-size: 1.55em;
+    line-height: 1.1em;
+    margin: .5em 0 .5em 0;
+    font-weight: 600;
+}
+
+.summaries .dateline {
+	font-size: .75em;
+	color: #A4A4A4;
+	margin: 2em 0;
+}
+
+.summary-content {
+    font-size: .875em;
+    line-height: 1.4em;
+    color: #A4A4A4;
+    margin: 0 0 1.67em 0;
+}
+
+.article-index ul,
+.about ul {
+	list-style: square;
+}
+
+.article-index .dateline {
+	font-style: italic;
+}
+
+
+.footnotes {
+	padding: 1.5em 20px 0 20px;
+	border-top: 1px solid #f2f0ed;
+
+}
+
+.footnotes li {
+	font-size: .8em;
+	margin-bottom: .5em;
+	line-height: 1.5em;
+	margin-left: 1.5em;
+}
+
+.footnotes li:nth-child(1) {
+	margin-top: 1.5em;
+}
+
+.footnotes:before {
+	content: "Footnotes:";
+	font-size: 1em;
+	font-weight: 400;
+	margin-left: -20px;
+}
+
+.twitter-share {
+	display: flex;
+	align-items: center;
+	margin: 2em 20px 2em 20px;
+	padding: 20px;
+	background-color: #F4F2F0;
+}
+
+.twitter-share .fa-twitter {
+	color: #55ACEE;
+	font-size: 1.75em;
+	margin-right: 20px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.twitter-share p {
+	margin: 0;
+	font-size: .9em;
+	line-height: 1.4em;
+}
+
+.callout {
+	position: relative;
+	width: 100%;
+	padding: 1em 20px 1em 20px;
+	left: -20px;
+	background-color: #F5FFF4;
+}
+
+.callout::before { 
+    content: "Note: ";
+    font-weight: 400;
+}
+
+@media (min-width: 570px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: #666666;
+		background-color: #F4F2F0;
+		padding: 25px 30px 25px 30px;
+		font-size: 110%;
+	}
+
+	.content {
+		max-width: 640px;
+		margin: auto;
+		padding: 3em 4em;
+	}
+
+	.twitter-share {
+		max-width: 600px;
+		margin: 2em auto;
+	}
+
+	.nav-toggle {
+		display: none;
+	}
+
+	.nav-area {
+		display: flex !important;
+		justify-content: space-between;
+		flex-grow: 1;
+		position: static;
+		width: auto;
+		background-color: inherit;
+		box-shadow: none;
+		z-index: 100;
+		padding: 0;
+	}
+
+	.nav-list {
+		padding: 0;
+	}
+
+	.nav-list li:nth-child(1) {
+		margin-left: 0;
+	}
+
+	.title-area {
+		background-color: inherit;
+		color: inherit;
+		flex-grow: 1;
+		padding: 0;
+	}
+
+	.summaries .content-title,
+	.article-index .content-title, 
+	.about .content-title {
+		text-align: center;
+	}
+
+	.single .article-title {
+		font-size: 2.5em;
+	}
+}
+
+/*F5FFF4 - callout */
+/*#404040 - Dark Grey Font and Header*/
+/*#AAAAAA - Light Grey Font*/
+/*E6E6E6 - Light Text On Header*/
+/*4db380 - Green hover*/
+/*F4F2F0 - Nav area background*/
+/*666666 - Nav Links*/
+/*CCCCCC - share icons*/
+/*ff9933 - rss icon hover*/
+/*55ACEE - twitter icon hover*/
+/*171715 - gihub icon hover*/
+/*f2f0ed - hr*/
