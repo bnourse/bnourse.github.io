@@ -11,6 +11,7 @@ body {
 hr {
 	border: none;
 	border-bottom: 1px solid #f2f0ed;
+	margin: 0;
 }
 
 .title-area {
@@ -44,21 +45,40 @@ code {
 	font-weight: 400;
 }
 
-figure {
+figure.article-figure {
 	text-align: right;
 	margin: 0;
 }
 
-figure img {
+figure.article-figure img {
 	width: 100%;
 	padding: 2px;
 	border: 1px solid #f2f0ed;
 	border-radius: 2px;
 }
 
-figcaption {
+.article-figure figcaption {
 	font-style: italic;
 	font-size: .75em;
+}
+
+pre {
+	overflow-y: scroll;
+	word-wrap: normal;
+	background-color: #F4F2F1;
+	font-size: 1.1em;
+}
+
+pre.lineno {
+	margin-right: 1em;
+}
+
+pre.highlight {
+	padding-left: 1em;
+}
+
+figure.highlight {
+	margin: 0;
 }
 
 .content {
@@ -206,7 +226,7 @@ figcaption {
 .summaries .dateline {
 	font-size: .75em;
 	color: #A4A4A4;
-	margin: 2em 0;
+	margin: 2em 0 1em 0;
 }
 
 .summary-content {
@@ -274,7 +294,6 @@ figcaption {
 
 .callout {
 	position: relative;
-	width: 100%;
 	padding: 1em 20px 1em 20px;
 	left: -20px;
 	background-color: #F5FFF4;
@@ -284,6 +303,22 @@ figcaption {
     content: "Note: ";
     font-weight: 400;
 }
+
+.summaryimg {
+	display: none;
+}
+
+.article-capsule {
+	display: flex;
+	/*align-items: center;*/
+}
+
+.article-summary {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
 
 @media (min-width: 570px) {
 	header {
@@ -346,6 +381,31 @@ figcaption {
 
 	.single .article-title {
 		font-size: 2.5em;
+	}
+
+/*	.callout {
+		position: relative;
+		width: 100%;
+		padding: 1em 20px 1em 20px;
+		left: -20px;
+		background-color: #F5FFF4;
+	}*/
+
+	.callout {
+		position: static;
+		width: calc(100% - 40px);
+	}
+
+	.summaryimg {
+	    display: inline-block;
+	    /* position: absolute; */
+	    /* max-width: 150px; */
+	    padding: 10px;
+	    margin: 20px;
+	    margin-left: 0;
+	    width: 150px;
+	    height: 150px;
+	    border: 1px solid #eee;
 	}
 }
 

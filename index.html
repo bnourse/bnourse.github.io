@@ -7,13 +7,18 @@ layout: default
 	<h1 class="content-title">Recent Articles</h1>
 
 	{% for post in site.posts %}
-	  <div class="article-summary">
-	  	<hr>
-	    <p class="dateline">{{ post.date | date: "%b %-d, %Y" }}</p>
-	    <h1 class="article-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-	    
-	    <div class="summary-content">
-	    	{{ post.excerpt }}
+	  <hr>
+	  <div class="article-capsule">
+	  	{% if post.summaryimg %}
+	  		<img class="summaryimg" src="{{site.baseurl}}/assets/images/{{post.summaryimg}}">
+	  	{% endif %} 
+	  	<div class="article-summary">
+		    <p class="dateline">{{ post.date | date: "%b %-d, %Y" }}</p>
+		    <h1 class="article-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+		    
+		    <div class="summary-content">
+		    	{{ post.excerpt }}
+		    </div>
 	    </div>
 
 	  </div>
