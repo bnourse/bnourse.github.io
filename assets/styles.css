@@ -328,11 +328,21 @@ blockquote {
 }
 
 .hero1 {
-    background-image: url("./images/usnight.jpg");
+    background-image: url("./images/usnightsm.jpg");
 	background-size: cover;
 	background-position: 40% 40%;
 	position: relative;
 	height: 300px;
+}
+
+.gist {
+   max-width:650px;
+   overflow:auto;
+}
+
+.gist .blob-wrapper.data {
+   max-height:400px;
+   overflow:auto;
 }
 
 @media (min-width: 570px) {
