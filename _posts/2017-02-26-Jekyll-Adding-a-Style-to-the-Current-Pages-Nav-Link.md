@@ -1,8 +1,24 @@
 ---
 title: Jekyll—Adding a Style to the Current Page's Navigation Link
+summaryimg: jekyll.png
 ---
 
-Intro paragraph
+asdfsa
+
+> testing blockquote
+
+{% highlight html linenos %}
+{% raw %}
+<ul>
+  {% for the_page in site.pages %}
+    {% if the_page.title %}
+      <li><a href="{{ the_page.url }}">{{ the_page.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+{% endraw %}
+{% endhighlight %}
+
 
 {% highlight html linenos %}
 {% raw %}

@@ -310,7 +310,7 @@ figure.highlight {
 
 .article-capsule {
 	display: flex;
-	/*align-items: center;*/
+	align-items: center;
 }
 
 .article-summary {
@@ -319,6 +319,21 @@ figure.highlight {
 	align-items: flex-start;
 }
 
+blockquote {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+}
+
+.hero1 {
+    background-image: url("./images/usnight.jpg");
+	background-size: cover;
+	background-position: 40% 40%;
+	position: relative;
+	height: 300px;
+}
 
 @media (min-width: 570px) {
 	header {
@@ -398,14 +413,13 @@ figure.highlight {
 
 	.summaryimg {
 	    display: inline-block;
-	    /* position: absolute; */
-	    /* max-width: 150px; */
 	    padding: 10px;
 	    margin: 20px;
 	    margin-left: 0;
 	    width: 150px;
 	    height: 150px;
 	    border: 1px solid #eee;
+	    border-radius: 5px;
 	}
 }
 
