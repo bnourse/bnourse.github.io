@@ -6,7 +6,7 @@ excerpt: In this tutorial we'll cover— Creating a Ruby program and running it 
 
 <h2>Introduction</h2>
 
-<p>Congratulations on taking your first steps toward learning ruby! 
+<p>Congratulations on taking your first steps toward learning ruby!
 In this tutorial we'll cover: </p>
 
 <ul>
@@ -23,9 +23,9 @@ In this tutorial we'll cover: </p>
 
 <p>First we'll cover the basics of creating and running a program in Ruby.
  One popular way of showing basic program structure for someone learning a
- new language is to show them a Hello World program. 
+ new language is to show them a Hello World program.
  Hello World is a program that outputs the line of text "Hello World" to
- the console. 
+ the console.
  Sounds simple, doesnt it? It is! </p>
 
  <p>In Ruby, "Hello World" looks something like this: </p>
@@ -38,13 +38,13 @@ In this tutorial we'll cover: </p>
  that tells your program to write the statement that follows to the Terminal
  window.</p>
 
- <p>Go ahead and type or cut-and-paste that line of code into your text editor and 
- save it. 
+ <p>Go ahead and type or cut-and-paste that line of code into your text editor and
+ save it.
  Call it <code>hw.rb</code></p>
 
  <h3>Running your first Ruby program</h3>
 
- <p>Now that you have written your first program, let's learn how to run it and see 
+ <p>Now that you have written your first program, let's learn how to run it and see
  what happens.
  In the terminal type <code>ruby hw.rb</code> and press enter. You should see the
  words "Hello World" appear on the next line of the terminal. </p>
@@ -52,7 +52,7 @@ In this tutorial we'll cover: </p>
  <p>Congratulations! You just wrote and ran your first Ruby program</p>
 
  <h2>Make a program run anywhere</h2>
- 
+
  <p>If our questions app is going to be useful, it should be easy to run. <code>ruby hw.rb</code> isn't too bad to type, but our program is eventually going to use command line options to add and remove questions. That could wind up looking something like: <code>ruby questions.rb add "Why do I have to keep typing all this out every time?"</code></p> Wouldn't it be better if we could just type: <code>questions add "This is nice, isn't it?"</code>
 
  <p>The command to execute our new program was only one line, but there are a couple of things happening behind the scenes when you hit enter.</p>
@@ -77,25 +77,25 @@ In this tutorial we'll cover: </p>
  chmod u+x questions
  </pre>
 
- <p>This line tells your shell to modify the permissions for questions. The <code>u+x</code> part says to "+"add the e"x"ecute permision for "u"sers.
+ <p>This line tells your shell to modify the permissions for questions. The <code>u+x</code> part says to "+" add the e"x"ecute permision for "u"sers.
 
  <h3>Tell your shell where to find your program</h3>
 
  <p>Whenever you try to execute a command in the shell it looks through a list of locations for the program name you entered.</p>
- 
+
 =>
 
  <h2>Next steps in Ruby</h2>
 
  <h3>Variables</h3>
- 
+
  <p>In much the same way you learned in Algebra class how to use letters like "x" and "y" as placeholders for numbers in mathematical operations, Ruby lets us define variables to use as placeholders in our <em>code</em>. The biggest difference is that, with Ruby, variables can hold amost <em>any kind</em> of information.</p>
 
  <p>You can create a new variable, or change the value of an existing one by writing <code>some_variable = "some_value"</code>. In this case we created/assigned a variable named some_value and assigned it a String (most items in Ruby with quotation marks around them are Strings).
 
  <h3>Data Types and Operations</h3>
 
- <p>What is a, "kind of information?" Take a second to think about it. It might help to ask yourself: </p> 
+ <p>What is a, "kind of information?" Take a second to think about it. It might help to ask yourself: </p>
 
  <ul>
 	 <li>What do all words have in common?</li>
@@ -115,37 +115,37 @@ In this tutorial we'll cover: </p>
 <table>
 	<tr>
 		<th>Data Type</th>
-	    <th>Stores</th> 
+	    <th>Stores</th>
 	    <th>Common Operations</th>
 	</tr>
 	<tr>
 	    <td>String</td>
-	    <td>Words and characters</td> 
+	    <td>Words and characters</td>
 	    <td>make uppercase/lowercase</td>
 	</tr>
 	<tr>
 	    <td>Integer</td>
-	    <td>Whole numbers</td> 
+	    <td>Whole numbers</td>
 	    <td>Mathematical operations like +,-,*,/</td>
 	</tr>
 	<tr>
 	    <td>Float</td>
-	    <td>Numbers with decimal points</td> 
+	    <td>Numbers with decimal points</td>
 		<td>+, -, *, /, round</td>
 	</tr>
 	<tr>
 	    <td>Array</td>
-	    <td>A list of things</td> 
+	    <td>A list of things</td>
 		<td>add/remove items</td>
 	</tr>
 
 </table>
 
-<p>An individual example of a Data Type is called an, "Instance." In other words, the whole number <code>123</code> 
+<p>An individual example of a Data Type is called an, "Instance." In other words, the whole number <code>123</code>
 
 <h3>Functions</h3>
 
-<p>When we try to solve most tasks we can usually identify certain sets of steps that 
+<p>When we try to solve most tasks we can usually identify certain sets of steps that
 get repeated. Maybe we're unloading the dishwasher. For every item you unload you might pick it up, wipe any moisture off of it, and place it in the appropriate cupboard or cabinet. If you were writing a program to unload a dishwasher that holds 50 items you could type those three steps 50 times, or you could call the process something like, "unload an item" and cut your typing by 2/3rds.</p>
 
 <p>That shortening process is like a programmer writing a function, and we can save ourselves a lot of work that way. Here's an example of a Ruby function: </p>
@@ -188,15 +188,3 @@ end
 <p>One thing to notice is the "==". That's not a typo. When we assign values to a variable we use "=" but if we want to check if two things are equal we use "==".</p>
 
 <p>You might have guessed from the name that <code>@questionList</code> is an Array. In this case an array of Strings. That's right, the items that make up an Array's list are Instances of various Data Types.</p>
-
-
-
-
-
-
-
-
-
-
-
-

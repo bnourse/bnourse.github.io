@@ -21,7 +21,6 @@ For the purposes of navigation, it's common to include links to our Pages (or at
 {% endraw %}
 {% endhighlight %}
 
-
 {% highlight html linenos %}
 {% raw %}
 <ul class="nav-list">
