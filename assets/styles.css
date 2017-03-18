@@ -1,24 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500');
+/*@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i');*/
+/*@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');*/
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Carrois+Gothic');
 
 body {
 	font-family: 'Open Sans', sans-serif;
 	padding: 0;
 	margin: 0;
 	font-weight: 300;
+	background-color: #EFEFEF;
 }
 
-hr {
+/*hr {
 	border: none;
-	border-bottom: 1px solid #f2f0ed;
+	border-bottom: 1px solid #B0D0D7;
 	margin: 0;
+}*/
+
+hr { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #ddd, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #ddd, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #ddd, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #ddd, #f0f0f0); 
 }
 
 .title-area {
-	background-color: #404040;
+	background-color: #333;
 	color: #E6E6E6;
 	margin: 0;
-    letter-spacing: .05em;
+  letter-spacing: .05em;
 	padding: 21px 20px 25px 20px;
 	display: flex;
 	justify-content: space-between;
@@ -30,17 +44,20 @@ a {
 }
 
 a.current {
-	color: #4DB380;
+	color: #FF3B3F;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
+	/*font-family: 'Oswald', sans-serif;*/
+	font-family: 'Carrois Gothic', sans-serif;
 	font-weight: 400;
-	margin: 0 0 0 0;
+	margin: 0;
+	color:#566b78;
 }
 
 code {
 	font-family: 'Roboto Mono', monospace;
-	background-color: #F4F2F1;
+	background-color: #fcfcff;
 	font-size: .9em;
 	font-weight: 400;
 }
@@ -65,7 +82,7 @@ figure.article-figure img {
 pre {
 	overflow-y: scroll;
 	word-wrap: normal;
-	background-color: #F4F2F1;
+	background-color: #fcfcff;
 	font-size: 1.1em;
 }
 
@@ -93,9 +110,10 @@ figure.highlight {
 
 .header-title {
 	text-transform: uppercase;
-    margin: 0;
-    font-size: 1.15em;
-    font-weight: 400;
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: 400;
+  color: #EFEFEF;
 }
 
 .nav-toggle {
@@ -105,8 +123,12 @@ figure.highlight {
 	border: 2px solid transparent;
 }
 
+.nav-toggle:hover {
+	color: #CAEBF2;
+}
+
 .nav-toggle:active {
-	border: 2px solid blue;
+	border: 2px solid #FF3B3F;
 	border-radius: 5px;
 }
 
@@ -139,14 +161,13 @@ figure.highlight {
 	text-transform: uppercase;
 	font-size: .75em;
 	letter-spacing: .2em;
-	word-spacing: .4em;
-	color: #AAAAAA;
+	word-spacing: .4em; 
 	font-weight: 400;
 	margin: 2.25em 0;
 } 
 
 .nav-list {
-	color: #666666;
+	color: #566b78;
 	list-style-type: none;
 	text-transform: uppercase;
 	margin: 0;
@@ -162,7 +183,7 @@ figure.highlight {
 
 .nav-list a:hover,
 .summaries a:hover {
-	color: #4DB380;
+	color: #FF3B3F;
 }
 
 .share-icons {
@@ -226,7 +247,8 @@ figure.highlight {
 .summaries .dateline {
 	font-size: .75em;
 	color: #A4A4A4;
-	margin: 2em 0 1em 0;
+	padding: 2em 0 1em 0;
+	margin: 0;
 }
 
 .summary-content {
@@ -275,7 +297,7 @@ figure.highlight {
 	align-items: center;
 	margin: 2em 20px 2em 20px;
 	padding: 20px;
-	background-color: #F4F2F0;
+	background-color: #fcfcff;
 }
 
 .twitter-share .fa-twitter {
@@ -328,7 +350,15 @@ blockquote {
 }
 
 .hero1 {
-    background-image: url("./images/usnightsm.jpg");
+  background-image: url("./images/owlcomp.jpg");
+	background-size: cover;
+	background-position: 40% 40%;
+	position: relative;
+	height: 300px;
+}
+
+.hero2 {
+	background-image: url("./images/usnightsm.jpg");
 	background-size: cover;
 	background-position: 40% 40%;
 	position: relative;
@@ -350,10 +380,14 @@ blockquote {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		color: #666666;
+		color:#566b78;
 		background-color: #F4F2F0;
 		padding: 25px 30px 25px 30px;
 		font-size: 110%;
+	}
+
+	.header-title {
+		color: inherit;
 	}
 
 	.content {
@@ -430,8 +464,25 @@ blockquote {
 	    height: 150px;
 	    border: 1px solid #eee;
 	    border-radius: 5px;
+	    background-color: #E6E6EA;
 	}
 }
+
+/*
+#566b78 - Table header text, table text
+#EFEFEF - body bg
+#333    - Main Black text, header bg
+#FF3B3F - Reddish
+#ddd
+#f2f2f2 - table light cell background
+#CAEBF2 - light blue table highlight bg
+#A9A9A9 - Medium grey, table header bg
+#FF3B3F
+#f9f9f9
+#f1f1f1
+#B0D0D7
+*/
+
 
 /*F5FFF4 - callout */
 /*#404040 - Dark Grey Font and Header*/

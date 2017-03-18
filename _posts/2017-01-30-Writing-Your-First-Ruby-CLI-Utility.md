@@ -141,7 +141,7 @@ In this tutorial we'll cover: </p>
 
 </table>
 
-<p>An individual example of a Data Type is called an, "Instance." In other words, the whole number <code>123</code>
+<p>An individual example of a Data Type is called an, "Instance." In other words, the whole number <code>123</code> is an instance of the Integer type.
 
 <h3>Functions</h3>
 
@@ -187,4 +187,4 @@ end
 
 <p>One thing to notice is the "==". That's not a typo. When we assign values to a variable we use "=" but if we want to check if two things are equal we use "==".</p>
 
-<p>You might have guessed from the name that <code>@questionList</code> is an Array. In this case an array of Strings. That's right, the items that make up an Array's list are Instances of various Data Types.</p>
+<p>You might have guessed from the name that <code>@questionList</code> is an Array. In this case an array of Strings. That's right, the items that make up an Array's list are instances of various Data Types.</p>
