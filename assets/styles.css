@@ -345,20 +345,20 @@ blockquote {
   border-left: 3px solid #ccc;
 }
 
-.hero1 {
-  background-image: url("./images/owlcomp.jpg");
+.hero1, .hero2 {
 	background-size: cover;
 	background-position: 40% 40%;
 	position: relative;
 	height: 300px;
+	box-shadow: 0 5px 30px -5px #888;
+}
+
+.hero1 {
+  background-image: url("./images/owlcomp.jpg");
 }
 
 .hero2 {
 	background-image: url("./images/usnightsm.jpg");
-	background-size: cover;
-	background-position: 40% 40%;
-	position: relative;
-	height: 300px;
 }
 
 .gist {
@@ -377,7 +377,7 @@ blockquote {
 		justify-content: space-between;
 		align-items: center;
 		color:#566b78;
-		background-color: #F4F2F0;
+		background-color: #CAEBF2;
 		padding: 25px 30px 25px 30px;
 		font-size: 110%;
 	}
@@ -452,15 +452,27 @@ blockquote {
 	}
 
 	.summaryimg {
-	    display: inline-block;
-	    padding: 10px;
-	    margin: 20px;
-	    margin-left: 0;
-	    width: 150px;
-	    height: 150px;
-	    border: 1px solid #eee;
-	    border-radius: 5px;
-	    background-color: #E6E6EA;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 0;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #E6E6EA;
+	}
+
+	.fa-stack .fa-twitter {
+		color: #CAEBF2;
+	}
+
+	.fa-stack .fa-rss {
+		color: #CAEBF2;
+	}
+
+	.share-icons {
+		color: #566b78
 	}
 }
 
