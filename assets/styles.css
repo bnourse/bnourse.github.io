@@ -83,7 +83,12 @@ pre {
 }
 
 pre.lineno {
-	margin-right: 1em;
+	margin: 0 .5em;
+	background-color: #CAEBF2;
+}
+
+td.code pre {
+	margin-left: .5em;
 }
 
 pre.highlight {
@@ -92,6 +97,10 @@ pre.highlight {
 
 figure.highlight {
 	margin: 0;
+}
+
+.gutter.gl {
+	background-color: #CAEBF2;
 }
 
 .content {
