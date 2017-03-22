@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Carrois+Gothic');
 
 body {
@@ -45,15 +45,8 @@ a.current {
 h1, h2, h3, h4 {
 	font-family: 'Carrois Gothic', sans-serif;
 	font-weight: 400;
-	margin: 0;
+	margin: .75em 0;
 	color:#566b78;
-}
-
-code {
-	font-family: 'Roboto Mono', monospace;
-	background-color: #fcfcff;
-	font-size: .9em;
-	font-weight: 400;
 }
 
 figure.article-figure {
@@ -73,35 +66,46 @@ figure.article-figure img {
 	font-size: .75em;
 }
 
-pre {
+/*---> Code/Highlighting styles <---*/
+
+
+pre, code {
 	font-family: 'Roboto Mono', monospace;
-	font-weight: 400;
-	overflow-y: scroll;
-	word-wrap: normal;
 	background-color: #fcfcff;
-	font-size: 1.1em;
-}
-
-pre.lineno {
-	margin: 0 .5em;
-	background-color: #CAEBF2;
-}
-
-td.code pre {
-	margin-left: .5em;
-}
-
-pre.highlight {
-	padding-left: 1em;
-}
-
-figure.highlight {
 	margin: 0;
 }
 
-.gutter.gl {
+pre {
+	overflow-y: scroll;
+	word-wrap: normal;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+.highlight {
+	margin: 1em 0;
+}
+
+pre.highlight {
+	padding: 1em;
+}
+
+.lineno {
+	padding: .5em;
+}
+
+.gutter, .lineno {
 	background-color: #CAEBF2;
 }
+
+td.code {
+	padding: 1em .5em;
+}
+
+/*---*/
 
 .content {
 	padding: 0 20px 0 20px;

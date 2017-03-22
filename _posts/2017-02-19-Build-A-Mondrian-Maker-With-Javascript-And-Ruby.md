@@ -6,7 +6,7 @@ excerpt: Walk through programming a web app that lets us recreate something rese
 <h1>A Mondrian Maker in Javascript and Sinatra</h1>
 <p><a href="https://en.wikipedia.org/wiki/Piet_Mondrian">Piet Mondrian</a> was a Dutch painter who was most famous for his works using large blocks of primary colors separated by bold black lines.</p>
 
-<img src="./composition_II.jpg">
+<img src="/composition_II.jpg">
 
 <p>In this tutorial we're going to walk through programming a web app that lets us recreate something resembling one of Mondrian's works. We will create the front-end using HTML, CSS, and Javascript. Then we'll use Ruby to make a Sinatra server that will let us save and load our masterpieces.</p>
 
